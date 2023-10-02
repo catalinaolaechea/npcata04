@@ -1,0 +1,25 @@
+/*Usando un puntero, escriba un programa que encuentre el máximo de un conjunto de
+enteros que ingresa el usuario. El usuario ingresa al principio el tamaño de la muestra.*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int *pAlMax,i=0,cant,nro,max=0;
+    cout<<"ingrese la cantidad de numeros a ingresar"<<endl;
+    cin>>cant;
+    do{
+        cout<<"ingrese un numero"<<endl;
+        cin>>nro;
+        if(nro>max)
+            max=nro;
+        i++;
+    }
+    while(i<cant);
+    *pAlMax = max;
+    cout<<"el numero es"<<pAlMax<<endl;
+    
+    return 0;
+}
