@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
     int *pAlMax,i=0,cant,nro,max=0;
+    pAlMax=new int();
     cout<<"ingrese la cantidad de numeros a ingresar"<<endl;
     cin>>cant;
     do{
@@ -19,7 +20,8 @@ int main()
     }
     while(i<cant);
     *pAlMax = max;
-    cout<<"el numero es"<<pAlMax<<endl;
+    cout<<"el numero es "<<*pAlMax<<endl;
+    delete pAlMax;
     
     return 0;
 }
